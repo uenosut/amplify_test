@@ -95,7 +95,9 @@ async function deleteNote({ id, name }) {
             type="file"
             style={{ alignSelf: "end" }}
           />
-          <button onClick={createNote}>猫画像投稿！</button>
+          <Button type="submit" variation="primary">
+            猫画像投稿！
+          </Button>
         </Flex>
       </View>
       <Heading level={2}>Current Notes</Heading>
