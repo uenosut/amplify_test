@@ -70,7 +70,7 @@ async function deleteNote({ id, name }) {
 
   return (
     <View className="App">
-      <Heading level={1}>猫の機嫌判定アプリ</Heading>
+      <Heading level={1}>My Notes App</Heading>
       <View as="form" margin="3rem 0" onSubmit={createNote}>
         <Flex direction="row" justifyContent="center">
           <TextField
@@ -95,9 +95,7 @@ async function deleteNote({ id, name }) {
             type="file"
             style={{ alignSelf: "end" }}
           />
-          <Button type="submit" variation="primary">
-            猫画像投稿！
-          </Button>
+          <button onClick={createNote}>Create Note</button>
         </Flex>
       </View>
       <Heading level={2}>Current Notes</Heading>
