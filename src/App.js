@@ -75,16 +75,16 @@ async function deleteNote({ id, name }) {
         <Flex direction="row" justifyContent="center">
           <TextField
             name="name"
-            placeholder="Note Name"
-            label="猫の名前"
+            placeholder="猫の名前"
+            label="Note Name"
             labelHidden
             variation="quiet"
             required
           />
           <TextField
             name="description"
-            placeholder="Note Description"
-            label="猫の説明"
+            placeholder="猫の説明"
+            label="Note Description"
             labelHidden
             variation="quiet"
             required
