@@ -121,7 +121,7 @@ async function deleteNote({ id, name }) {
           />
         )}
         <Button variation="link" onClick={() => deleteNote(note)}>
-          Delete note
+          画像削除
         </Button>
       </Flex>
       ))}
