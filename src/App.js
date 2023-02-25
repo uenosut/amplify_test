@@ -100,7 +100,7 @@ async function deleteNote({ id, name }) {
           </Button>
         </Flex>
       </View>
-      <Heading level={2}>Current Notes</Heading>
+      <Heading level={2}>猫画像一覧</Heading>
       <View margin="3rem 0">
       {notes.map((note) => (
       <Flex
