@@ -46,7 +46,7 @@ const App = ({ signOut }) => {
   const form = new FormData(event.target);
   const image = form.get("image");
   const data = {
-    name: form.get("name"),
+    name: image.name,//form.get("name"),
     description: form.get("description"),
     image: image.name,
   };
@@ -75,14 +75,6 @@ async function deleteNote({ id, name }) {
       <View as="form" margin="3rem 0" onSubmit={createNote}>
         <Flex direction="row" justifyContent="center">
           <TextField
-            name="name"
-            placeholder="猫の名前"
-            label="Note Name"
-            labelHidden
-            variation="quiet"
-            required
-          />
-          <TextField
             name="description"
             placeholder="猫の説明"
             label="Note Description"
@@ -104,7 +96,7 @@ async function deleteNote({ id, name }) {
         <Link href="http://tdxcp-2022-e-bucket-webapp1.s3-website-ap-northeast-1.amazonaws.com" > 猫画像一覧 </Link>
         </View>
       </View>
-      <Heading level={2}>猫画像一覧</Heading>
+      <Heading level={2}>(=^x^=)</Heading>
       <View margin="3rem 0">
       {notes.map((note) => (
       <Flex
@@ -113,9 +105,6 @@ async function deleteNote({ id, name }) {
         justifyContent="center"
         alignItems="center"
       >
-        <Text as="strong" fontWeight={700}>
-          {note.name}
-        </Text>
         <Text as="span">{note.description}</Text>
         {note.image && (
           <Image
