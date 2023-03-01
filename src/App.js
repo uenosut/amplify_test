@@ -10,6 +10,7 @@ import {
   Text,
   TextField,
   View,
+  Link,
   withAuthenticator,
 } from '@aws-amplify/ui-react';
 import { listNotes } from "./graphql/queries";
@@ -96,9 +97,12 @@ async function deleteNote({ id, name }) {
             style={{ alignSelf: "end" }}
           />
           <Button type="submit" variation="primary">
-            猫画像投稿！
+            猫画像投稿！!
           </Button>
         </Flex>
+        <View margin="3rem 0">
+        <Link href="http://tdxcp-2022-e-bucket-webapp1.s3-website-ap-northeast-1.amazonaws.com" > 猫画像一覧 </Link>
+        </View>
       </View>
       <Heading level={2}>猫画像一覧</Heading>
       <View margin="3rem 0">
